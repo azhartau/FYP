@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  unity-server:
+    image: unity-server
+    build: .
+    ports:
+      - "7777:7777/udp"
+    restart: unless-stopped
